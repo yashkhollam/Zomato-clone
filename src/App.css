@@ -20,16 +20,14 @@
  
   list-style-type:none;
   display: flex;
-  margin-left: 750px;
+  /* margin-left: 750px; */
   
   /* padding: 10px 50px; */
   
 
 }
 
-.navlist .navtxt1{
-  
-}
+
 
 .navlist a{
   
@@ -50,7 +48,13 @@
 .navlist a:hover{
   color:azure;
 }
+.navtxt1{
+ 
+  padding:10px 400px 0 200px;
+  
+  
 
+}
 .zomatologo{
   position: absolute;
   height:60px;
@@ -109,7 +113,8 @@
  
   margin:0 200px 0 0px; 
  
-  height:6000px;
+  height:900px;
+  
  
 }
 
@@ -135,6 +140,8 @@
 .opt1:hover{
   transform: scale(1.05); 
 }
+
+
 .optimg1{
   height:170px;
   width: 355px;
@@ -147,11 +154,12 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight:600;
   margin:5px 0 0 16px;
+
 }
 .stayhome{
   margin:4px 0 0 16px;
   font-family: 'Courier New', Courier, monospace;
- 
+  
 }
 
 .opt2{
@@ -181,6 +189,7 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight:600;
   margin:5px 0 0 16px;
+
 }
 .View{
   margin:4px 0 0 16px;
@@ -229,7 +238,7 @@
   position: relative;
   font-family: Okra, Helvetica, sans-serif;
   font-size:18px;
-  margin:5px 0 0 200px;
+  margin:15px 0 0 200px;
   color:rgba(0, 0, 0, 0.785);
 
 }
@@ -241,13 +250,17 @@
   color: red;
 }
 
-.collectioncard{
-  margin-left:200px;
-}
+/* .collectioncard{
+ 
+} */
  .colcard{
-  display:flex;
-  margin: 30px 0 0 0;
-
+  position: absolute;
+  display: grid;
+  grid-template-columns:repeat(44,auto);
+  /* margin: 30px 0 0 0; */
+  
+    column-gap:15px;
+   margin:30px 0 0 200px;
  }
 
 .colimg1{
@@ -255,21 +268,39 @@
   width:266px;
   height:320px;
   border-radius:0.6rem;
-  position: absolute;
+  position: relative;
+  
  
 }
-.colcardtxt1{
-  text-decoration:none;
-position: relative;
+
+.colcardtxt{
+position: absolute;
+top: 260px;
+left:25px;
+text-decoration:none;
+position: absolute;
 color: white;
 font-family: Okra, Helvetica, sans-serif;
-padding:200px 0 0 0;
-
+/* // padding:200px 0 0 0;  */
 font-size:20px;
+
+
 }
 
+
+
+/* .colcardtxt1{
+  text-decoration:none;
+ position: absolute;
+color: white;
+font-family: Okra, Helvetica, sans-serif;
+// padding:200px 0 0 0; 
+margin: 260px 0 0 10px;
+font-size:20px;
+*/
+
 .colcard2{
-  margin:0 0 0 105px;
+  /* margin:0 0 0 105px; */
 
 }
 
@@ -278,20 +309,12 @@ font-size:20px;
    width:266px;
    height:320px;
    border-radius:0.6rem;
-   position: absolute;
+   position:relative;
   
- }
- .colcardtxt2{
-   text-decoration:none;
- position: relative;
- color: white;
- font-family: Okra, Helvetica, sans-serif;
-
- font-size:20px;
  }
 
  .colcard3{
-  margin:0 0 0 79px;
+  /* margin:0 0 0 79px; */
 
 }
  .colimg3{
@@ -299,20 +322,13 @@ font-size:20px;
    width:266px;
    height:320px;
    border-radius:0.6rem;
-   position: absolute;
+   position:relative;
   
  }
- .colcardtxt3{
-   text-decoration:none;
- position: relative;
- color: white;
- font-family: Okra, Helvetica, sans-serif;
  
- font-size:20px;
- }
 
  .colcard4{
-  margin:0 0 0 53px;
+  /* margin:0 0 0 53px; */
 
 }
  .colimg4{
@@ -320,17 +336,10 @@ font-size:20px;
    width:266px;
    height:320px;
    border-radius:0.6rem;
-   position: absolute;
+   position:relative;
   
  }
- .colcardtxt4{
-   text-decoration:none;
- position: relative;
- color: white;
- font-family: Okra, Helvetica, sans-serif;
  
- font-size:20px;
- }
 
  .loctaglinetxt{
   position:absolute;
@@ -568,6 +577,74 @@ width:19px;
     width:150px;
     color: white;
   }
+
+  .exploretxt{  
+    position: absolute;
+    font-size: 30px;
+    margin:1450px 0px 0 180px;
+  }
+
+  .optnearme1{
+    margin:1500px 0px 0 180px;
+    border:0.5px solid rgba(128, 128, 128, 0.292) ;
+    border-radius:7px;
+    font-size:23px;
+    padding:15px 0px 16px 9px;
+    width:1000px;
+    text-align: center;
+    
+  }
+
+  .optnearme2{
+    margin:22px 0px 0 180px;
+    border:0.5px solid rgba(128, 128, 128, 0.292) ;
+    border-radius:7px;
+    font-size:23px;
+    padding:15px 0px 16px 9px;
+    width:1000px;
+     text-align: center;
+  }
+
+  .optnearme3{
+    margin:22px 0px 0 180px;
+    border:0.5px solid rgba(128, 128, 128, 0.292) ;
+    border-radius:7px;
+    font-size:23px;
+    padding:15px 0px 16px 9px;
+    width:1000px;
+     text-align: center;
+  }
+
+  .optnearme4{
+    margin:22px 0px 0 180px;
+    border:0.5px solid rgba(128, 128, 128, 0.292) ;
+    border-radius:7px;
+    font-size:23px;
+    padding:15px 0px 16px 9px;
+    width:1000px;
+     text-align: center;
+  }
+
+
+  .optnearme5{
+    margin:22px 0px 0 180px;
+    border:0.5px solid rgba(128, 128, 128, 0.292) ;
+    border-radius:7px;
+    font-size:23px;
+    padding:15px 0px 16px 9px;
+    width:1000px;
+     text-align: center;
+  }
+
+  .footer{
+    background-color:rgba(245, 222, 179, 0.306);
+    height: 480px;
+    width:1519.20px;
+    margin:70px 0 100px 0 ;
+    position: absolute;
+    
+  }
  
+
 
 

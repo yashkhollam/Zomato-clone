@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
 import indexheader from "../src/images/indexheader.avif";
 import zomatologo from "../src/images/zomatologo.avif";
 import orderoption1 from "../src/images/ordreoption/orderopt1.avif";
@@ -11,9 +10,16 @@ import collection2 from "../src/images/collection/collection2.avif";
 import collection3 from "../src/images/collection/collection3.avif";
 import collection4 from "../src/images/collection/collection4.avif";
 import mobscreen from "../src/images/collection/mobscreen.png";
+import zomatofooterlogo from "../src/images/zomato black logo.avif";
+
+
 
 function App() {
   return (
+    <>
+  
+
+    
     <div className="App">
       <div className="index">
         <div>  
@@ -23,7 +29,11 @@ function App() {
 
       <nav className="navbar" >
         <ul className='navlist' >
-        <li><a href="#" className="navtxt1" >Get the App</a></li>
+        <li>
+          <div className='navtxt1'>
+            <a href="#" >Get the App</a>
+          </div>
+        </li>
         <li><a href="#" className="navtxt2">Investor Relations</a></li>
         <li><a href="#" className="navtxt3">Add restaurant</a></li>
         <li><a href="#" className="navtxt4">Log in</a></li>
@@ -62,13 +72,13 @@ function App() {
           
           { <div className="orderopt"> 
             <div className="opt1">
-              <a href="#">
-                <img src={orderoption1} alt="orderopt1" className="optimg1"/>
-              </a>
+            
+                <img src={orderoption1} alt="orderopt1" className="optimg1"/>             
               <p className="orderonline">Ordre Online</p>
               <p className="stayhome">Stay home and order to your doorstep</p>
-            </div> 
-
+            
+            </div>
+            
             <div className="opt2">
               <a href="#">
                 <img src={orderoption2} alt="orderoption2" className="optimg2"/>
@@ -98,24 +108,25 @@ function App() {
         </p>
       </div> }
         
-      { <div className="collectioncard">
+      
       <div className="colcard">
+        <a href='./orderOnline.jsx'>
         <div className="colcard1">
            <img src={collection1}
                 alt="collection1"
                 className="colimg1"/>
-                <p><a href="#" className="colcardtxt1">Top Trending Spots
+                 <p><a href="#" className="colcardtxt">Top Trending Spots
                 <br/> 39 Places
                 </a>
-                </p>
+                </p> 
         </div>
-        
+        </a>
         <div className="colcard2">
           <img src={collection2}
                 alt="collection2"
                 className="colimg2"/>
                 <p><a href="#" 
-                      className="colcardtxt2">Newly Opened Places
+                      className="colcardtxt">Newly Opened Places
                 <br/> 9 Places
                 </a>
                 </p>
@@ -126,7 +137,7 @@ function App() {
                 alt=""
                 className="colimg3"/>
                 <a href="#"
-                       className="colcardtxt3">Romantic Dinning Places
+                       className="colcardtxt">Romantic Dinning Places
                 <br/> 27 Places
                 </a>
                 
@@ -136,14 +147,14 @@ function App() {
           <img src={collection4}
           alt="collection4"
           className="colimg4"/>
-          <p> <a href="#" 
-                 className="colcardtxt4"> Best Insta-worthy Places
+           <p> <a href="#" 
+                 className="colcardtxt"> Best Insta-worthy Places
           <br/> 27 Places
           </a>
-          </p>
+          </p> 
         </div>
       </div>
-      </div> }
+      </div> 
      
       { <div className="storeloc">
         <p className="loctaglinetxt">Popular localities in and around <a href="#" className="locationtxt">Pune</a></p>
@@ -252,7 +263,7 @@ function App() {
 
 
     {/* / GET app section  */}
-    { <div className="getapp">
+     <div className="getapp">
      
       <img src={mobscreen} className="mobscreen" alt="Image is not available"/>
       <p className="getapptxt">Get the Zomato app</p>
@@ -272,14 +283,71 @@ function App() {
         <button onclick="" className="shareinputbtn">Share App Link</button>
     </div>
      
-     <p></p>
-  </div> }
+    
+  </div> 
+    
+       <p className='exploretxt'>
+        Explore options near me
+       </p>
+
+       <div className='optnearme'>
+       <details className='optnearme1'>
+         <summary className='heading'>Popular cuisines near me</summary>
+          <p className='optionlist'>
+             <br/>Beverages food near meBiryani food near meBurger food near meChinese food near meCoffee food near meDesserts food near meIce Cream food near meKebab food near meMaharashtrian food near meMomos food near meMughlai food near meNorth Indian food near mePizza food near meRolls food near meSandwich food near meSeafood food near meShake food near meSichuan food near meSouth Indian food near meStreet food near me
+             </p>
+         </details>
+
+         <details className='optnearme2'>
+         <summary className='heading'>Popular restaurant types near me</summary>
+          <p className='optionlist'>
+             <br/>Bakeries near meBars near meBeverage Shops near meBhojanalya near meCafés near meCasual Dining near meClubs near meCocktail Bars near meConfectioneries near meDessert Parlors near meDhabas near meFine Dining near meFood Courts near meFood Trucks near meIrani Cafes near meKiosks near meLounges near meMicrobreweries near mePaan Shop near mePubs near meQuick Bites near meSweet Shops near me
+             </p>
+         </details>
+
+         <details className='optnearme3'>
+         <summary className='heading'>Popular cuisines near me</summary>
+          <p className='optionlist'>
+             <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             </p>
+         </details>
+
+
+         <details className='optnearme5'>
+         <summary className='heading'>Top Restaurant Chains</summary>
+          <p className='optionlist'>
+             <br/>Domino'sDunkin' DonutsFaasosKFCMcDonald'sParadiseBiryaniSubwayWOW! Momo
+             </p>
+         </details>
+
+         <footer className='footer'>
+            
+            <div className='footerdiv'>
+              <img src={zomatofooterlogo} alt='zomatofooterlogo'/>
+            </div>
+
+          </footer>
 
 
     </div>
-      </div>
+      
     </div>
+    
+    
+     
+    
+   
+  
+    
+    
+    
+    </div>
+    
+    
+  </>
   );
+  
 }
 
 export default App;
+
